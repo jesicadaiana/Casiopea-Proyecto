@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <!-- Informacion que el usuario no ve -->
+<head> <!-- Informacion que el usuario no ve -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Pagina de Casiopea </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" 
+    rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" 
+    rel="stylesheet">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title> Casiopea | Articulos hechos con amor </title>
 </head>
 <body>
-    <div>
-        <h1> Casiopea.ar</h1>
-        <h3> Cuadernos artesanales y Velas de soja aromáticas </h3>
-    </div>
-    <header>
-        <!-- Cabezeras -->
+    <header> <!-- Cabezeras -->
+        <div class="portada">
+            <img src="5.png" alt="portada">
+        </div>
+
+        <div  id="tituloPrincipal" >
+            <h1> Casiopea </h1>
+            <h3 id="subtitulos"> Articulos hechos con amor  </h3>
+        </div>
+    
+            <nav>
+                <ul class="menuDeOpciones">
+                    <li><a href="index.html"> Inicio</a></li>
+                    <li><a href="TrabajosRealizados.html"> Mis Trabajos</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
     </header>
 
     <main> <!-- CONTENIDO  -->       
-        <p> <img src="4992988.png" alt="logoCasiopea" width="200px"> </p><!-- Alt es el txt que aparece si no se puede argar la img-->        
-        <h3> A que nos dedicamos? </h3>
+        <p> <img src="CART1.jpg" alt="logoCasiopea" width="200px"> </p><!-- Alt es el txt que aparece si no se puede argar la img-->        
+        <h3 id="subtitulos"> A que nos dedicamos? </h3>
         <ul>
             <li> Agendas y cuadernos </li>
                 <ul>
@@ -36,60 +64,16 @@
         </ul>
     </div> <!-- ORDENAR EN OTRAS PAGINAS-->
 
-        <!-- Formularios -->
-        <form> 
-                <input type="submit" value="Enviar formulario"/>
-                <input type="reset" value="Limpiar formulario"/>   
-        </form>
-
-    <form>
-        <div>Consulta si llegamos con tu pedido</div>
-        <input type="date"name="genero"value="hombre"/>
-
-    </form>
-
-        <div>Acepta términos y condiciones</div>
-            <input type="checkbox"name="acepta"value="1"/>
-            </form>
-            
-        <div> <!-- Formulario para rellenar campos:-->
-            <form>
-                <label for="nombre_apellido"> Nombre:</label>  <!--Label For lo manda a backend-->
-                <input type="text"name="nombre_apellido"/>
-
-                <label for="apellido1"> Apellido: </label>
-                <input type="text"name="apellido1"/>
-
-                <label for="email"> Tu email: </label>
-                <input type="email"name="email"/>
-            </form>
-        </div>
-    <!-- Menu desplegable option -->
-            <form>                   
-                    <select name="talles">
-                    <option value="L">Large</option>
-                    <option value="M">Medium</option>
-                    <option value="S">Small</option>
-                    </select>
-            </form>
-    <div> <!-- Caja div> -->
-            <form>
-                <fieldset> 
-                    <legend> Envianos mensaje directo!  </legend>
-                    <select name="talles">
-                        <option value="consulta"> Consulta </option>
-                        <option value="pedido"> Pedido </option>
-                        <option value="reclamo"> Reclamo </option>
-                    </select>                   
-                </fieldset>
-            </form>  
-    <div>
-
-    </div>
     </main>
     <footer ID="pie"> <!-- PIE DE PAGINA -->
         <a href="https://instagram.com/casiopea.ar">Instagram</a>
         <a href="https://www.linkedin.com/in/ajesicaacosta/" target="_blank">Linkedin</a> <!--Abre pestañ nueva-->
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
 </body>
 </html>

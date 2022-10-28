@@ -1,0 +1,54 @@
+
+
+* { /*reseteo de css*/ 
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    font-family: 'Playfair Display', serif;
+    padding: 20px;
+}
+
+.portada img {
+    padding: 0%;
+    height: 300px;
+}
+
+#titulo {
+    padding: 50px;
+    font-size: 30px;
+    background-color: brown;
+}
+
+ol {
+    list-style-type: none;
+} 
+
+ul {
+    list-style-type: none;
+}
+
+.menuDeOpciones {
+    display: flex;
+}
+
+.menuDeOpciones li {
+    list-style-type: none;
+    width: 200px;
+    display: inline;
+    padding: 10px;
+    margin: 5px;
+    background-color: pink;
+}
+
+#subtitulos {
+    font-family: 'Amatic SC', cursive;
+    color: purple;
+}
+
+footer {
+    background-color: pink;
+    display: block;
+}
