@@ -1,25 +1,23 @@
 
+/* rgb(237 222 227 ) */
 
-* { /*reseteo de css*/ 
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0%;
 }
-
+.logoTitulo{
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
 
 body {
     font-family: 'Playfair Display', serif;
     padding: 20px;
 }
 
-.portada img {
-    padding: 0%;
-    height: 300px;
-}
-
 #titulo {
     padding: 50px;
     font-size: 30px;
-    background-color: brown;
 }
 
 ol {
@@ -31,7 +29,9 @@ ul {
 }
 
 .menuDeOpciones {
-    display: flex;
+    display: inline;
+    float: right;
+    
 }
 
 .menuDeOpciones li {
@@ -40,15 +40,44 @@ ul {
     display: inline;
     padding: 10px;
     margin: 5px;
-    background-color: pink;
 }
 
 #subtitulos {
-    font-family: 'Amatic SC', cursive;
-    color: purple;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bold;
+    color: rgb(255,102,140)
+}
+
+.carreteIndex {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.carreteIndex img {
+    justify-content: space-between;
+    margin: 15px;
+    width: 250px;
+    padding: 10px;
+    border: solid white 5px;
+}
+
+.boxListas {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+
 }
 
 footer {
-    background-color: pink;
+    background-color: rgb(255,102,140) ;
     display: block;
+}
+
+@media only screen and (min-width: 400px) and (max-height: 740px) {
+    body {
+    }
 }
