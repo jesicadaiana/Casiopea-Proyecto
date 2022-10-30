@@ -1,13 +1,13 @@
-
 /* rgb(237 222 227 ) */
 
 * {
     margin: 0%;
 }
-.logoTitulo{
-    display: flex;
-    align-items: center;
-    width: 200px;
+
+.logoTitulo {
+    margin: 0;
+    display: block;
+    width: 100%;
 }
 
 body {
@@ -19,42 +19,34 @@ body {
     padding: 50px;
     font-size: 30px;
 }
-
-ol {
-    list-style-type: none;
-} 
-
-ul {
-    list-style-type: none;
-}
-
 .menuDeOpciones {
-    display: inline;
-    float: right;
-    
+    background-color:rgb(255, 102, 140);
+    display: block;
+    height: 50px;
+    text-align:left;
+    justify-content: left;
 }
 
 .menuDeOpciones li {
     list-style-type: none;
-    width: 200px;
-    display: inline;
-    padding: 10px;
-    margin: 5px;
+    display: inline-flex;
+    margin: 10px 20px 10px 20px;
+    width: 10%;
+    border-right: 1px solid white; 
 }
 
 #subtitulos {
     font-family: 'Playfair Display SC', serif;
     font-weight: bold;
-    color: rgb(255,102,140)
+    color: rgb(255, 102, 140)
 }
 
 .carreteIndex {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 30px;
-
 }
 
 .carreteIndex img {
@@ -69,15 +61,43 @@ ul {
     display: flex;
     justify-content: space-evenly;
     background-color: pink;
-
 }
 
 footer {
-    background-color: rgb(255,102,140) ;
+    margin-top: 100px;
+    background-color: rgb(255, 102, 140);
     display: block;
 }
 
-@media only screen and (min-width: 400px) and (max-height: 740px) {
-    body {
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+a:link {
+    color: purple;
+}
+
+a:visited {
+    color: white;
+}
+
+a:focus,
+a:hover {
+    border-bottom: 2px solid;
+    color: red;
+}
+
+a:active {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+    .menuDeOpciones li {
+        background-color: crimson;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
     }
 }
